@@ -24,3 +24,5 @@
 ## Проекты  
 * [Telegram бот](https://github.com/shadowfiendinmyheart/timetable-bot-telegram)  
 * [Социальная сеть](https://github.com/Glovindan/web-course)  
+## HTML + CSS
+* [Резюме](https://shadowfiendinmyheart.github.io/cv/)
