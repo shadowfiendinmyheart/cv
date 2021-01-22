@@ -154,7 +154,7 @@ body {
 }
 
 .link-project::after {
-  content: 'link';
+  content: '*';
 }
 
 .link-project:hover {
