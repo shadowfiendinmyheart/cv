@@ -27,7 +27,8 @@
 * Дружелюбие  
 ## Проекты  
 * [Онлайн-словарь](https://github.com/shadowfiendinmyheart/dictionary-react-app)
-* [Telegram бот](https://github.com/shadowfiendinmyheart/timetable-bot-telegram)  
+* [Telegram бот для онлайн словаря](https://github.com/shadowfiendinmyheart/dictionary-bot)
+* [Telegram бот расписания занятий](https://github.com/shadowfiendinmyheart/timetable-bot-telegram)  
 * [Социальная сеть](https://github.com/Glovindan/web-course)  
 ## HTML + CSS
 * [Резюме](https://shadowfiendinmyheart.github.io/cv/)
