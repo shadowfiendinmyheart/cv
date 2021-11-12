@@ -17,8 +17,7 @@
 ## Навыки  
 * HTML5, CSS3, JS(ES6)
 * React
-* Node.js  
-* Java, C++  
+* Node.js
 * SQL  
 * Adobe Photoshop, Figma  
 ## Личностные качества  
