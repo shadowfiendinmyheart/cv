@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
 }
 
 b {
@@ -104,20 +105,21 @@ a {
   z-index: -1;
 }
 
-.github.a-contacts::after{
-  background-color: rgb(58, 58, 58);
+.github::after {
+  background-color: #6e7781;
 }
 
-.vk.a-contacts::after{
-  background-color: blue;
+.vk::after {
+  background-color: #0077ff;
 }
 
-.inst.a-contacts::after{
-  background-color: rgb(236, 106, 197);
+.in::after {
+  background-color: #0a66c2;
+  ;
 }
 
-.tg.a-contacts::after{
-  background-color: rgb(112, 203, 255);
+.tg::after {
+  background-color: #27A7E7;
 }
 
 .a-contacts:hover {
@@ -161,6 +163,18 @@ a {
   margin-right: 50px;
 }
 
+.nested-ul {
+  margin-left: 20px;
+}
+
+.company-name {
+  font-size: larger;
+}
+
+.company-position {
+  font-weight: 400;
+}
+
 .link-project {
   color: black;
   text-decoration: none;
@@ -179,11 +193,11 @@ a {
   margin-bottom: 10px;
 }
 
-.nested-ul {
-  margin-left: 20px;
-}
-
 @media screen and (max-width: 700px) {
+  .wrapper {
+    padding: 0 50px;
+  }
+
   .contact-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -201,6 +215,7 @@ a {
   .little-about {
     flex-direction: column;
     gap: 10px;
+    padding-left: 15px;
   }
 
   .heading {
@@ -215,7 +230,6 @@ a {
 
   .about-ul {
     width: 100%;
-    text-align: center;
     margin-top: 10px;
   }
 }
