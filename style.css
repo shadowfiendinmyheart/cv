@@ -218,6 +218,10 @@ a {
     padding-left: 15px;
   }
 
+  .little-about li {
+    white-space: normal;
+  }
+
   .heading {
     width: 100%;
     margin: 0 auto;
@@ -231,5 +235,77 @@ a {
   .about-ul {
     width: 100%;
     margin-top: 10px;
+  }
+}
+.about-ul {
+  list-style: none;
+}
+
+.nested-ul {
+  list-style: disc;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.nested-ul li {
+  margin-bottom: 6px;
+}
+
+.job {
+  margin-bottom: 30px;
+}
+
+.job:last-child {
+  margin-bottom: 0;
+}
+
+.job-intro {
+  margin-top: 8px;
+}
+
+.job-note {
+  margin-top: 6px;
+}
+
+.about-li {
+  margin-bottom: 8px;
+}
+
+.skills li {
+  margin-bottom: 6px;
+}
+
+.label {
+  font-weight: 400;
+}
+
+.position {
+  text-align: center;
+}
+
+@media print {
+  .back,
+  .avatar {
+    display: none;
+  }
+
+  .name {
+    margin-top: 0;
+  }
+}
+
+.little-about {
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 8px;
+}
+
+.little-about li {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 700px) {
+  .little-about li {
+    white-space: normal;
   }
 }
