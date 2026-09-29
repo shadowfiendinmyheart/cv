@@ -1,0 +1,17 @@
+@import url('../a/style.css');
+/* A2. Гротеск + антиква: Spectral для имени и заголовков, Inter для текста */
+:root { --rail: 190px; --serif: 'Spectral', Georgia, serif; --sans: 'Inter', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; }
+body { font-size: .97rem; }
+.name { font-family: var(--serif); font-weight: 400; font-size: 5.6rem; letter-spacing: -.03em; line-height: .95; }
+.role { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 1.3rem; color: var(--graphite); }
+.role-sep { font-style: normal; }
+.photo { filter: none; border-radius: 2px; }
+.meta { border-top-width: 1px; }
+.row { padding-top: 56px; }
+.label { font-family: var(--serif); font-weight: 400; font-size: 1.8rem; letter-spacing: -.01em; }
+.company { font-family: var(--serif); font-weight: 500; font-size: 1.6rem; letter-spacing: -.01em; }
+.position { font-size: .85rem; letter-spacing: .02em; }
+.points li::before { width: 6px; height: 1px; top: .8em; }
+@media print {
+  .name { font-size: 4.6rem; } .row { padding-top: 6mm; } .label { font-size: 1.5rem; }
+}

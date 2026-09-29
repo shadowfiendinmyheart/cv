@@ -1,0 +1,23 @@
+@import url('../a/style.css');
+/* A1. Воздух: лёгкое крупное имя, широкая левая колонка, много пустого места, без лишних линий */
+:root { --rail: 210px; }
+body { line-height: 1.7; }
+.sheet { max-width: 1040px; padding: 104px 96px 96px; }
+.name { font-weight: 500; font-size: 6.2rem; letter-spacing: -.055em; line-height: .9; }
+.role { margin-top: 28px; font-weight: 400; color: var(--muted); font-size: 1.2rem; }
+.photo { filter: none; width: 150px; height: 188px; }
+.meta { margin-top: 64px; border-top: 1px solid var(--ink); border-bottom: 0; padding: 18px 0 0; }
+.row { padding-top: 88px; }
+.label { border-bottom: 0; font-weight: 400; font-size: 2rem; letter-spacing: -.035em; margin-bottom: 28px; padding-bottom: 0; }
+.label::before { align-self: center; }
+.job + .job { margin-top: 56px; padding-top: 48px; }
+.points li + li { margin-top: 12px; }
+.company { font-weight: 500; font-size: 1.6rem; }
+@media print {
+  :root { --rail: 30mm; }
+  body { line-height: 1.45; }
+  .name { font-size: 4.6rem; } .role { margin-top: 3mm; }
+  .meta { margin-top: 6mm; padding-top: 3mm; }
+  .row { padding-top: 7mm; } .label { font-size: 1.5rem; margin-bottom: 3mm; }
+  .job + .job { margin-top: 5mm; padding-top: 4mm; } .points li + li { margin-top: 1.1mm; }
+}

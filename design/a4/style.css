@@ -1,0 +1,30 @@
+@import url('../a/style.css');
+/* A4. Компактный: Golos Text, имя в одну строку, заголовки разделов в левой колонке */
+:root { --sans: 'Golos Text', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; --rail: 180px; }
+.sheet { padding: 60px 72px; }
+.masthead { grid-template-columns: auto 1fr; gap: 28px; align-items: center; }
+.photo { order: -1; filter: none; width: 104px; height: 104px; border-radius: 50%; }
+.name { max-width: none; font-size: 3.6rem; font-weight: 600; letter-spacing: -.035em; line-height: 1; }
+.role { margin-top: 10px; font-size: 1.05rem; color: var(--muted); }
+.meta { margin-top: 32px; border-top-width: 1px; }
+.row { display: grid; grid-template-columns: var(--rail) 1fr; padding-top: 28px; margin-top: 28px; border-top: 1px solid var(--hair); }
+.meta + .row { border-top: 0; margin-top: 0; }
+.label { display: block; border: 0; padding: 0; margin: 0; font-size: 1.05rem; }
+.label::before { display: block; width: auto; margin-bottom: 4px; }
+.body, .body:has(.job) { margin-left: 0; }
+.job { display: block; }
+.job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.dates { padding: 0; white-space: nowrap; }
+.company { font-size: 1.3rem; }
+.skills { grid-template-columns: 170px 1fr; }
+@media screen and (max-width: 760px) {
+  .row { grid-template-columns: 1fr; gap: 12px; }
+  .masthead { grid-template-columns: 1fr; } .name { font-size: 2.8rem; }
+  .job-head { flex-direction: column; gap: 2px; }
+}
+@media print {
+  :root { --rail: 28mm; }
+  .photo { width: 20mm; height: 20mm; } .name { font-size: 3.3rem; }
+  .row { padding-top: 4mm; margin-top: 4mm; } .meta { margin-top: 5mm; }
+  .skills { grid-template-columns: 34mm 1fr; }
+}
