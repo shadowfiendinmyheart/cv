@@ -8,72 +8,41 @@
   <meta name="description" content="Иван Тюлькин, Frontend-разработчик: React, TypeScript, 4 года коммерческой разработки">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=JetBrains+Mono:wght@400&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div class="page">
-    <aside class="sidebar">
-      <img class="avatar" src="./face.jpg" alt="Иван Тюлькин" />
-      <h1 class="name">Иван Тюлькин</h1>
-      <p class="role">Frontend-разработчик</p>
-      <p class="role-stack">React · TypeScript</p>
+  <main class="sheet">
+    <header class="masthead">
+      <div>
+        <h1 class="name">Иван Тюлькин</h1>
+        <p class="role">Frontend-разработчик <span class="role-sep">/</span> React, TypeScript</p>
+      </div>
+      <img class="photo" src="./face.jpg" alt="Иван Тюлькин" />
+    </header>
 
-      <section class="side-block">
-        <h2 class="side-title">Контакты</h2>
-        <ul class="contacts">
-          <li><a href="https://t.me/thedawnisyourenemy" target="_blank">Telegram: @thedawnisyourenemy</a></li>
-          <li><a href="mailto:tyulkindev@yandex.ru">tyulkindev@yandex.ru</a></li>
-          <li><a href="tel:+79508211819">+7 950 821-18-19</a></li>
-          <li><a
-              href="https://www.linkedin.com/in/%D0%B8%D0%B2%D0%B0%D0%BD-%D1%82%D1%8E%D0%BB%D1%8C%D0%BA%D0%B8%D0%BD-273121270/"
-              target="_blank">LinkedIn</a></li>
-        </ul>
-        <p class="side-text">Санкт-Петербург<br />Удалёнка, гибрид или офис, готов к переезду</p>
-      </section>
+    <div class="meta">
+      <ul>
+        <li>Санкт-Петербург</li>
+        <li>Удалёнка, гибрид или офис</li>
+        <li>Готов к релокации</li>
+      </ul>
+      <ul>
+        <li><a href="https://t.me/thedawnisyourenemy" target="_blank">tg @thedawnisyourenemy</a></li>
+        <li><a href="mailto:tyulkindev@yandex.ru">tyulkindev@yandex.ru</a></li>
+        <li><a href="tel:+79508211819">+7 950 821-18-19</a></li>
+        <li><a
+            href="https://www.linkedin.com/in/%D0%B8%D0%B2%D0%B0%D0%BD-%D1%82%D1%8E%D0%BB%D1%8C%D0%BA%D0%B8%D0%BD-273121270/"
+            target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
 
-      <section class="side-block">
-        <h2 class="side-title">Навыки</h2>
-        <dl class="skills">
-          <dt>Основа</dt>
-          <dd>JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS, CSS Modules, styled-components, адаптивная вёрстка</dd>
-          <dt>React и архитектура</dt>
-          <dd>React, React Router, SPA, Feature-Sliced Design, компонентный подход, монорепозиторий (Lerna), UI-киты и
-            дизайн-системы, Next.js и SSR (пет-проекты)</dd>
-          <dt>Состояние и данные</dt>
-          <dd>MobX, Zustand, Redux, TanStack Query (React Query), REST API, Axios, Swagger / OpenAPI, WebSocket</dd>
-          <dt>Формы</dt>
-          <dd>React Hook Form, Formik, Yup</dd>
-          <dt>Тестирование</dt>
-          <dd>Jest, Vitest, React Testing Library, скриншотные тесты в Storybook, Cypress, Playwright</dd>
-          <dt>Инструменты</dt>
-          <dd>Git, GitLab, CI/CD (GitLab CI), Vite, Webpack, ESLint, Prettier, Docker, Figma, Jira, YouTrack, Confluence
-          </dd>
-          <dt>Процессы</dt>
-          <dd>Scrum, фичалидерство, дизайн-ревью, код-ревью, менторинг</dd>
-          <dt>Метрики и данные</dt>
-          <dd>Клиентские метрики, ClickHouse, SQL, Redash</dd>
-          <dt>Бэкенд на базовом уровне</dt>
-          <dd>Node.js, PostgreSQL</dd>
-        </dl>
-      </section>
-
-      <section class="side-block">
-        <h2 class="side-title">Образование</h2>
-        <p class="side-text"><strong>Удмуртский государственный университет</strong><br />Прикладная информатика,
-          2022</p>
-      </section>
-
-      <section class="side-block">
-        <h2 class="side-title">Языки</h2>
-        <p class="side-text">Русский — родной<br />Английский — B1</p>
-      </section>
-    </aside>
-
-    <main class="content">
-      <section class="block">
-        <h2 class="block-title">О себе</h2>
+    <section class="row">
+      <h2 class="label">О себе</h2>
+      <div class="body lead">
         <p>Frontend-разработчик, <strong>4 года коммерческой разработки</strong> на React и TypeScript в B2B-продуктах:
           электронный документооборот в логистике (Контур) и корпоративный интернет-банк (Just a Team of Creators).</p>
         <p>Делаю общие механизмы, на которых работают все команды Контур.Логистики: клиентские метрики, загрузку файлов,
@@ -81,23 +50,23 @@
           разбора обращений после него.</p>
         <p>Беру задачи с неопределённостью: исследую, проектирую, защищаю решение на дизайн-ревью и только потом пишу
           код.</p>
-      </section>
+      </div>
+    </section>
 
-      <section class="block">
-        <h2 class="block-title">Опыт работы</h2>
+    <section class="row">
+      <h2 class="label">Опыт</h2>
+      <div class="body">
 
         <article class="job">
           <header class="job-head">
-            <div>
-              <h3 class="company">Контур</h3>
-              <p class="position">Frontend-разработчик</p>
-            </div>
-            <p class="dates">Май 2024 — настоящее время</p>
+            <h3 class="company">Контур</h3>
+            <span class="dates">май 2024 — сейчас</span>
           </header>
+          <p class="position">Frontend-разработчик</p>
           <p class="job-intro">Контур.Логистика — сервис электронного обмена перевозочными документами: 100 человек,
             4 подкоманды, несколько SPA-приложений в монорепозитории на Lerna, работаем по Scrum. Моя подкоманда — общие
             задачи: делаем механизмы для всех команд документооборота.</p>
-          <ul class="achievements">
+          <ul class="points">
             <li>Как фичалид перевёл на новый дизайн Контура <strong>все экраны приложения для 6 ролей
                 пользователей</strong>. Вёл фича-команду (ещё один фронтендер, тестировщик и два дизайнера), нарезал работу
               на недельные задачи и сам написал большую часть кода. Выпустил редизайн <strong>за неделю до
@@ -120,41 +89,21 @@
             <li>Перевёл пошаговое обучение пользователей на общее решение Контура: без разработчиков уже создано
               <strong>больше пяти обучений</strong>.</li>
           </ul>
-          <p class="job-note">Также: покрываю фичи unit-, скриншотными и e2e-тестами, ревьюю код соседних подкоманд,
+          <p class="note">Также: покрываю фичи unit-, скриншотными и e2e-тестами, ревьюю код соседних подкоманд,
             помогаю с онбордингом и менторю новых фронтендеров.</p>
-          <ul class="tags">
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>MobX</li>
-            <li>Zustand</li>
-            <li>TanStack Query</li>
-            <li>React Hook Form</li>
-            <li>Formik</li>
-            <li>CSS Modules</li>
-            <li>SCSS</li>
-            <li>Storybook</li>
-            <li>Jest</li>
-            <li>Vitest</li>
-            <li>React Testing Library</li>
-            <li>Playwright</li>
-            <li>Vite</li>
-            <li>Webpack</li>
-            <li>Lerna</li>
-            <li>GitLab</li>
-            <li>ClickHouse</li>
-          </ul>
+          <p class="stack">TypeScript · React · MobX · Zustand · TanStack Query · React Hook Form · Formik · CSS Modules ·
+            SCSS · Storybook · Jest · Vitest · React Testing Library · Playwright · Vite · Webpack · Lerna · GitLab ·
+            ClickHouse</p>
         </article>
 
         <article class="job">
           <header class="job-head">
-            <div>
-              <h3 class="company">Just a Team of Creators</h3>
-              <p class="position">Frontend-разработчик</p>
-            </div>
-            <p class="dates">Июль 2022 — май 2024</p>
+            <h3 class="company">Just a Team of Creators</h3>
+            <span class="dates">июль 2022 — май 2024</span>
           </header>
+          <p class="position">Frontend-разработчик</p>
           <p class="job-intro">Платформа для корпоративного интернет-банка (ДБО). Команда 15 человек.</p>
-          <ul class="achievements">
+          <ul class="points">
             <li>Сделал с нуля уведомления о статусах документов и платежей на WebSocket: до этого в продукте их не было.
             </li>
             <li>Разработал фронтенд сервиса корпоративных карт.</li>
@@ -162,36 +111,66 @@
             <li>Развивал внутренний UI-кит по Atomic Design вместе с дизайнерами. Согласовывал с бэкендом контракты REST
               API до начала разработки.</li>
           </ul>
-          <ul class="tags">
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>SCSS</li>
-            <li>REST API</li>
-            <li>Swagger / OpenAPI</li>
-            <li>WebSocket</li>
-            <li>Jira</li>
-          </ul>
+          <p class="stack">TypeScript · React · Redux · SCSS · REST API · Swagger / OpenAPI · WebSocket · Jira</p>
         </article>
 
         <article class="job">
           <header class="job-head">
-            <div>
-              <h3 class="company">Т-Банк</h3>
-              <p class="position">Frontend-разработчик (стажёр)</p>
-            </div>
-            <p class="dates">Март — июнь 2021</p>
+            <h3 class="company">Т-Банк</h3>
+            <span class="dates">март — июнь 2021</span>
           </header>
+          <p class="position">Frontend-разработчик, стажёр</p>
           <p class="job-intro">Внутренний дашборд для мониторинга задач подразделений.</p>
-          <ul class="achievements">
+          <ul class="points">
             <li>Покрыл e2e-тестами на Cypress основные сценарии приложения.</li>
             <li>Перевёл классовые компоненты на хуки и исправил критические ошибки, после чего внутренних баг-репортов
               стало меньше.</li>
           </ul>
         </article>
-      </section>
-    </main>
-  </div>
+
+      </div>
+    </section>
+
+    <section class="row">
+      <h2 class="label">Навыки</h2>
+      <dl class="body skills">
+        <dt>Основа</dt>
+        <dd>JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS, CSS Modules, styled-components, адаптивная вёрстка</dd>
+        <dt>React и архитектура</dt>
+        <dd>React, React Router, SPA, Feature-Sliced Design, компонентный подход, монорепозиторий (Lerna), UI-киты и
+          дизайн-системы, Next.js и SSR (пет-проекты)</dd>
+        <dt>Состояние и данные</dt>
+        <dd>MobX, Zustand, Redux, TanStack Query (React Query), REST API, Axios, Swagger / OpenAPI, WebSocket</dd>
+        <dt>Формы</dt>
+        <dd>React Hook Form, Formik, Yup</dd>
+        <dt>Тестирование</dt>
+        <dd>Jest, Vitest, React Testing Library, скриншотные тесты в Storybook, Cypress, Playwright</dd>
+        <dt>Инструменты</dt>
+        <dd>Git, GitLab, CI/CD (GitLab CI), Vite, Webpack, ESLint, Prettier, Docker, Figma, Jira, YouTrack, Confluence</dd>
+        <dt>Процессы</dt>
+        <dd>Scrum, фичалидерство, дизайн-ревью, код-ревью, менторинг</dd>
+        <dt>Метрики и данные</dt>
+        <dd>Клиентские метрики, ClickHouse, SQL, Redash</dd>
+        <dt>Бэкенд</dt>
+        <dd>Node.js, PostgreSQL — на базовом уровне</dd>
+      </dl>
+    </section>
+
+    <section class="row">
+      <h2 class="label">Образование</h2>
+      <div class="body">
+        <p><strong>Удмуртский государственный университет</strong></p>
+        <p class="muted">Прикладная информатика, 2022</p>
+      </div>
+    </section>
+
+    <section class="row">
+      <h2 class="label">Языки</h2>
+      <div class="body">
+        <p>Русский — родной, английский — B1</p>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
