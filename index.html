@@ -3,237 +3,194 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Иван Тюлькин — Frontend-разработчик</title>
   <meta name="description" content="Иван Тюлькин, Frontend-разработчик: React, TypeScript, 4 года коммерческой разработки">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="back"></div>
+  <div class="page">
+    <aside class="sidebar">
       <img class="avatar" src="./face.jpg" alt="Иван Тюлькин" />
-      <div class="title-block">
-        <h1 class="name">
-          Иван Тюлькин
-        </h1>
-        <h2 class="position">
-          Frontend-разработчик · React, TypeScript
-        </h2>
-      </div>
-      <ul class="little-about">
-        <li>
-          Санкт-Петербург
-        </li>
-        <li>
-          Удалёнка, гибрид или офис, готов к переезду
-        </li>
-        <li>
-          <a href="tel:+79508211819">+7 950 821 18 19</a>
-        </li>
-        <li>
-          <a href="mailto:tyulkindev@yandex.ru">tyulkindev@yandex.ru</a>
-        </li>
-      </ul>
-      <div class="contact-box">
-        <div class="contact">
-          <a class="tg a-contacts" href="https://t.me/thedawnisyourenemy" target="_blank">
-            tg
-          </a>
-        </div>
-        <div class="contact" title="">
-          <a class="in a-contacts"
-            href="https://www.linkedin.com/in/%D0%B8%D0%B2%D0%B0%D0%BD-%D1%82%D1%8E%D0%BB%D1%8C%D0%BA%D0%B8%D0%BD-273121270/"
-            target="_blank">
-            in
-          </a>
-        </div>
-      </div>
+      <h1 class="name">Иван Тюлькин</h1>
+      <p class="role">Frontend-разработчик</p>
+      <p class="role-stack">React · TypeScript</p>
 
-    </header>
-    <hr class="line" />
-    <section class="main">
-      <article class="about">
-        <h2 class="heading">
-          О себе:
-        </h2>
-        <ul class="about-ul">
-          <li class="about-li">
-            Frontend-разработчик, 4 года коммерческой разработки на React и TypeScript в B2B-продуктах: электронный
-            документооборот в логистике (Контур) и корпоративный интернет-банк (Just a Team of Creators).
-          </li>
-          <li class="about-li">
-            Делаю общие механизмы, на которых работают все команды Контур.Логистики: клиентские метрики, загрузку
-            файлов, баннеры, базовые контролы. Был фичалидом редизайна всего приложения: от архитектуры и дизайн-ревью
-            до релиза и разбора обращений после него.
-          </li>
-          <li class="about-li">
-            Беру задачи с неопределённостью: исследую, проектирую, защищаю решение на дизайн-ревью и только потом пишу
-            код.
-          </li>
+      <section class="side-block">
+        <h2 class="side-title">Контакты</h2>
+        <ul class="contacts">
+          <li><a href="https://t.me/thedawnisyourenemy" target="_blank">Telegram: @thedawnisyourenemy</a></li>
+          <li><a href="mailto:tyulkindev@yandex.ru">tyulkindev@yandex.ru</a></li>
+          <li><a href="tel:+79508211819">+7 950 821-18-19</a></li>
+          <li><a
+              href="https://www.linkedin.com/in/%D0%B8%D0%B2%D0%B0%D0%BD-%D1%82%D1%8E%D0%BB%D1%8C%D0%BA%D0%B8%D0%BD-273121270/"
+              target="_blank">LinkedIn</a></li>
         </ul>
-      </article>
-      <article class="about">
-        <h2 class="heading">
-          Опыт работы:
-        </h2>
-        <div>
-          <ul class="about-ul job">
-            <li>
-              <span class="company-name">Контур</span><br />
-              <i>Май 2024 — настоящее время</i><br />
-              <span class="company-position">Frontend-разработчик</span>
-            </li>
-            <li class="job-intro">
-              Контур.Логистика — сервис электронного обмена перевозочными документами: 100 человек, 4 подкоманды,
-              несколько SPA-приложений в монорепозитории на Lerna, работаем по Scrum. Моя подкоманда — общие задачи:
-              делаем механизмы для всех команд документооборота.
-            </li>
-            <ul class="nested-ul">
-              <li>
-                Как фичалид перевёл на новый дизайн Контура все экраны приложения для 6 ролей пользователей. Вёл
-                фича-команду (ещё один фронтендер, тестировщик и два дизайнера), нарезал работу на недельные задачи и
-                сам написал большую часть кода. Выпустил редизайн за неделю до запуска зависимой фичи с жёстким
-                дедлайном — бесшовного перехода между Диадоком и Логистикой.
-              </li>
-              <li>
-                Оценил риски по метрикам аудитории и обосновал выкатку без канареечного релиза, согласовал это решение с
-                поддержкой и экспертами. Релиз прошёл без критических инцидентов и всплеска обращений, пользователи
-                оценили новый интерфейс на 4,3 из 5.
-              </li>
-              <li>
-                Переработал каркас приложения: разбил разросшийся layout на три, для каждой из 6 ролей сделал своё
-                боковое меню вместо общего конфига и перевёл его на инфраструктурный компонент Контура.
-              </li>
-              <li>
-                Заменил Google Analytics на Контур.Метрику и спроектировал общий механизм фронтовых метрик с единой
-                точкой входа: через него в продукте собираются 300+ метрик. Вместе с аналитиками запустил процесс, в
-                котором метрики закладывают ещё на этапе аналитики. Отвечаю за это направление в Логистике, провёл
-                обучение для продактов и разработчиков.
-              </li>
-              <li>
-                Ввёл слой обёрток над библиотекой компонентов Контура: обновления дизайн-системы и правки контролов
-                теперь делаются в одном месте. Отвечаю за единый внешний вид приложений Логистики.
-              </li>
-              <li>
-                Разработал общие модули для приложений Логистики: неблокирующую загрузку файлов с фоновым режимом и
-                единый менеджер баннеров с разделением логики и вёрстки.
-              </li>
-              <li>
-                За месяц сделал интерфейс для новой роли — контролёра: десктоп и адаптивная мобильная версия. Фича
-                вышла в срок, на тестировании фронтовых багов почти не было.
-              </li>
-              <li>
-                Перевёл пошаговое обучение пользователей на общее решение Контура: без разработчиков уже создано больше
-                пяти обучений.
-              </li>
-            </ul>
-            <li class="job-note">
-              Также: покрываю фичи unit-, скриншотными и e2e-тестами, ревьюю код соседних подкоманд, помогаю с
-              онбордингом и менторю новых фронтендеров.
-            </li>
-            <li class="job-note">
-              <span class="label">Стек:</span> TypeScript, React, MobX, Zustand, TanStack Query (React Query), React
-              Hook Form, Formik, CSS Modules, SCSS, Storybook, Jest, Vitest, React Testing Library, Playwright, Vite,
-              Webpack, Lerna, GitLab, ClickHouse
-            </li>
+        <p class="side-text">Санкт-Петербург<br />Удалёнка, гибрид или офис, готов к переезду</p>
+      </section>
+
+      <section class="side-block">
+        <h2 class="side-title">Навыки</h2>
+        <dl class="skills">
+          <dt>Основа</dt>
+          <dd>JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS, CSS Modules, styled-components, адаптивная вёрстка</dd>
+          <dt>React и архитектура</dt>
+          <dd>React, React Router, SPA, Feature-Sliced Design, компонентный подход, монорепозиторий (Lerna), UI-киты и
+            дизайн-системы, Next.js и SSR (пет-проекты)</dd>
+          <dt>Состояние и данные</dt>
+          <dd>MobX, Zustand, Redux, TanStack Query (React Query), REST API, Axios, Swagger / OpenAPI, WebSocket</dd>
+          <dt>Формы</dt>
+          <dd>React Hook Form, Formik, Yup</dd>
+          <dt>Тестирование</dt>
+          <dd>Jest, Vitest, React Testing Library, скриншотные тесты в Storybook, Cypress, Playwright</dd>
+          <dt>Инструменты</dt>
+          <dd>Git, GitLab, CI/CD (GitLab CI), Vite, Webpack, ESLint, Prettier, Docker, Figma, Jira, YouTrack, Confluence
+          </dd>
+          <dt>Процессы</dt>
+          <dd>Scrum, фичалидерство, дизайн-ревью, код-ревью, менторинг</dd>
+          <dt>Метрики и данные</dt>
+          <dd>Клиентские метрики, ClickHouse, SQL, Redash</dd>
+          <dt>Бэкенд на базовом уровне</dt>
+          <dd>Node.js, PostgreSQL</dd>
+        </dl>
+      </section>
+
+      <section class="side-block">
+        <h2 class="side-title">Образование</h2>
+        <p class="side-text"><strong>Удмуртский государственный университет</strong><br />Прикладная информатика,
+          2022</p>
+      </section>
+
+      <section class="side-block">
+        <h2 class="side-title">Языки</h2>
+        <p class="side-text">Русский — родной<br />Английский — B1</p>
+      </section>
+    </aside>
+
+    <main class="content">
+      <section class="block">
+        <h2 class="block-title">О себе</h2>
+        <p>Frontend-разработчик, <strong>4 года коммерческой разработки</strong> на React и TypeScript в B2B-продуктах:
+          электронный документооборот в логистике (Контур) и корпоративный интернет-банк (Just a Team of Creators).</p>
+        <p>Делаю общие механизмы, на которых работают все команды Контур.Логистики: клиентские метрики, загрузку файлов,
+          баннеры, базовые контролы. Был фичалидом редизайна всего приложения: от архитектуры и дизайн-ревью до релиза и
+          разбора обращений после него.</p>
+        <p>Беру задачи с неопределённостью: исследую, проектирую, защищаю решение на дизайн-ревью и только потом пишу
+          код.</p>
+      </section>
+
+      <section class="block">
+        <h2 class="block-title">Опыт работы</h2>
+
+        <article class="job">
+          <header class="job-head">
+            <div>
+              <h3 class="company">Контур</h3>
+              <p class="position">Frontend-разработчик</p>
+            </div>
+            <p class="dates">Май 2024 — настоящее время</p>
+          </header>
+          <p class="job-intro">Контур.Логистика — сервис электронного обмена перевозочными документами: 100 человек,
+            4 подкоманды, несколько SPA-приложений в монорепозитории на Lerna, работаем по Scrum. Моя подкоманда — общие
+            задачи: делаем механизмы для всех команд документооборота.</p>
+          <ul class="achievements">
+            <li>Как фичалид перевёл на новый дизайн Контура <strong>все экраны приложения для 6 ролей
+                пользователей</strong>. Вёл фича-команду (ещё один фронтендер, тестировщик и два дизайнера), нарезал работу
+              на недельные задачи и сам написал большую часть кода. Выпустил редизайн <strong>за неделю до
+                запуска</strong> зависимой фичи с жёстким дедлайном — бесшовного перехода между Диадоком и Логистикой.</li>
+            <li>Оценил риски по метрикам аудитории и обосновал выкатку без канареечного релиза, согласовал это решение с
+              поддержкой и экспертами. Релиз прошёл без критических инцидентов и всплеска обращений, пользователи оценили
+              новый интерфейс <strong>на 4,3 из 5</strong>.</li>
+            <li>Переработал каркас приложения: разбил разросшийся layout на три, для каждой из 6 ролей сделал своё боковое
+              меню вместо общего конфига и перевёл его на инфраструктурный компонент Контура.</li>
+            <li>Заменил Google Analytics на Контур.Метрику и спроектировал общий механизм фронтовых метрик с единой
+              точкой входа: через него в продукте собираются <strong>300+ метрик</strong>. Вместе с аналитиками запустил
+              процесс, в котором метрики закладывают ещё на этапе аналитики. Отвечаю за это направление в Логистике,
+              провёл обучение для продактов и разработчиков.</li>
+            <li>Ввёл слой обёрток над библиотекой компонентов Контура: обновления дизайн-системы и правки контролов
+              теперь делаются в одном месте. Отвечаю за единый внешний вид приложений Логистики.</li>
+            <li>Разработал общие модули для приложений Логистики: неблокирующую загрузку файлов с фоновым режимом и
+              единый менеджер баннеров с разделением логики и вёрстки.</li>
+            <li><strong>За месяц</strong> сделал интерфейс для новой роли — контролёра: десктоп и адаптивная мобильная
+              версия. Фича вышла в срок, на тестировании фронтовых багов почти не было.</li>
+            <li>Перевёл пошаговое обучение пользователей на общее решение Контура: без разработчиков уже создано
+              <strong>больше пяти обучений</strong>.</li>
           </ul>
-          <ul class="about-ul job">
-            <li>
-              <span class="company-name">Just a Team of Creators</span><br />
-              <i>Июль 2022 — май 2024</i><br />
-              <span class="company-position">Frontend-разработчик</span>
-            </li>
-            <li class="job-intro">
-              Платформа для корпоративного интернет-банка (ДБО). Команда 15 человек.
-            </li>
-            <ul class="nested-ul">
-              <li>
-                Сделал с нуля уведомления о статусах документов и платежей на WebSocket: до этого в продукте их не было.
-              </li>
-              <li>
-                Разработал фронтенд сервиса корпоративных карт.
-              </li>
-              <li>
-                Поддерживал и дорабатывал ключевые сценарии банка: массовые платежи и фильтрацию операций.
-              </li>
-              <li>
-                Развивал внутренний UI-кит по Atomic Design вместе с дизайнерами. Согласовывал с бэкендом контракты REST
-                API до начала разработки.
-              </li>
-            </ul>
-            <li class="job-note">
-              <span class="label">Стек:</span> TypeScript, React, Redux, SCSS, REST API, Swagger / OpenAPI, WebSocket,
-              Jira
-            </li>
+          <p class="job-note">Также: покрываю фичи unit-, скриншотными и e2e-тестами, ревьюю код соседних подкоманд,
+            помогаю с онбордингом и менторю новых фронтендеров.</p>
+          <ul class="tags">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>MobX</li>
+            <li>Zustand</li>
+            <li>TanStack Query</li>
+            <li>React Hook Form</li>
+            <li>Formik</li>
+            <li>CSS Modules</li>
+            <li>SCSS</li>
+            <li>Storybook</li>
+            <li>Jest</li>
+            <li>Vitest</li>
+            <li>React Testing Library</li>
+            <li>Playwright</li>
+            <li>Vite</li>
+            <li>Webpack</li>
+            <li>Lerna</li>
+            <li>GitLab</li>
+            <li>ClickHouse</li>
           </ul>
-          <ul class="about-ul job">
-            <li>
-              <span class="company-name">Т-Банк</span><br />
-              <i>Март — июнь 2021</i><br />
-              <span class="company-position">Frontend-разработчик (стажёр)</span>
+        </article>
+
+        <article class="job">
+          <header class="job-head">
+            <div>
+              <h3 class="company">Just a Team of Creators</h3>
+              <p class="position">Frontend-разработчик</p>
+            </div>
+            <p class="dates">Июль 2022 — май 2024</p>
+          </header>
+          <p class="job-intro">Платформа для корпоративного интернет-банка (ДБО). Команда 15 человек.</p>
+          <ul class="achievements">
+            <li>Сделал с нуля уведомления о статусах документов и платежей на WebSocket: до этого в продукте их не было.
             </li>
-            <li class="job-intro">
-              Внутренний дашборд для мониторинга задач подразделений.
-            </li>
-            <ul class="nested-ul">
-              <li>
-                Покрыл e2e-тестами на Cypress основные сценарии приложения.
-              </li>
-              <li>
-                Перевёл классовые компоненты на хуки и исправил критические ошибки, после чего внутренних баг-репортов
-                стало меньше.
-              </li>
-            </ul>
+            <li>Разработал фронтенд сервиса корпоративных карт.</li>
+            <li>Поддерживал и дорабатывал ключевые сценарии банка: массовые платежи и фильтрацию операций.</li>
+            <li>Развивал внутренний UI-кит по Atomic Design вместе с дизайнерами. Согласовывал с бэкендом контракты REST
+              API до начала разработки.</li>
           </ul>
-        </div>
-      </article>
-      <article class="about">
-        <h2 class="heading">
-          Навыки:
-        </h2>
-        <ul class="about-ul skills">
-          <li><span class="label">Основа:</span> JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS, CSS Modules,
-            styled-components, адаптивная вёрстка</li>
-          <li><span class="label">React и архитектура:</span> React, React Router, SPA, Feature-Sliced Design,
-            компонентный подход, монорепозиторий (Lerna), UI-киты и дизайн-системы, Next.js и SSR (пет-проекты)</li>
-          <li><span class="label">Состояние и данные:</span> MobX, Zustand, Redux, TanStack Query (React Query), REST
-            API, Axios, Swagger / OpenAPI, WebSocket</li>
-          <li><span class="label">Формы:</span> React Hook Form, Formik, Yup</li>
-          <li><span class="label">Тестирование:</span> Jest, Vitest, React Testing Library, скриншотные тесты в
-            Storybook, Cypress, Playwright</li>
-          <li><span class="label">Инструменты:</span> Git, GitLab, CI/CD (GitLab CI), Vite, Webpack, ESLint, Prettier,
-            Docker, Figma, Jira, YouTrack, Confluence</li>
-          <li><span class="label">Процессы:</span> Scrum, фичалидерство, дизайн-ревью, код-ревью, менторинг</li>
-          <li><span class="label">Метрики и данные:</span> клиентские метрики, ClickHouse, SQL, Redash</li>
-          <li><span class="label">Бэкенд на базовом уровне:</span> Node.js, PostgreSQL</li>
-          <li><span class="label">Английский:</span> B1</li>
-        </ul>
-      </article>
-      <article class="about">
-        <h2 class="heading">
-          Образование:
-        </h2>
-        <ul class="about-ul">
-          <li class="about-li">
-            Удмуртский государственный университет
-          </li>
-          <li class="about-li">
-            Прикладная информатика
-          </li>
-          <li class="about-li">
-            2018–2022
-          </li>
-        </ul>
-      </article>
-    </section>
-    <hr class="line" />
+          <ul class="tags">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>SCSS</li>
+            <li>REST API</li>
+            <li>Swagger / OpenAPI</li>
+            <li>WebSocket</li>
+            <li>Jira</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <header class="job-head">
+            <div>
+              <h3 class="company">Т-Банк</h3>
+              <p class="position">Frontend-разработчик (стажёр)</p>
+            </div>
+            <p class="dates">Март — июнь 2021</p>
+          </header>
+          <p class="job-intro">Внутренний дашборд для мониторинга задач подразделений.</p>
+          <ul class="achievements">
+            <li>Покрыл e2e-тестами на Cypress основные сценарии приложения.</li>
+            <li>Перевёл классовые компоненты на хуки и исправил критические ошибки, после чего внутренних баг-репортов
+              стало меньше.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
   </div>
 </body>
 
