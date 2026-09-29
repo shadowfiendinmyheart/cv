@@ -21,3 +21,19 @@
   .row:not(.contacts), .contacts { padding-top: 40px; }
   .location { flex-direction: column; } .location li::after { display: none; }
 }
+/* плотнее по вертикали */
+.contacts .body { row-gap: 2px; line-height: 1.6; }
+.location { margin-top: 8px; }
+@media screen and (max-width: 760px) {
+  /* две колонки: слева мессенджер и профили, справа почта и телефон */
+  .contacts .body { grid-template-columns: 1fr 1fr; column-gap: 16px; row-gap: 0; font-size: .92rem; }
+  .contact-group { display: flex !important; flex-direction: column; gap: 4px; }
+  .contact-group + .contact-group { margin-top: 0; }
+  .location { grid-column: 1 / -1; margin-top: 12px; display: grid !important; grid-template-columns: 1fr 1fr; column-gap: 16px; }
+  .location li:first-child { grid-column: 1; } 
+  .contacts a { gap: 7px; min-height: 28px; }
+}
+@media screen and (max-width: 760px) {
+  /* тот же зазор, что у сетки контактов, чтобы правая колонка совпала с почтой и телефоном */
+  .location { column-gap: 16px !important; }
+}
