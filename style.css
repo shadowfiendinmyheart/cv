@@ -239,7 +239,6 @@ strong {
 }
 
 .points li {
-  position: relative;
   padding-left: 20px;
 }
 
@@ -247,13 +246,14 @@ strong {
   margin-top: 10px;
 }
 
+/* маркер без позиционирования: иначе в PDF пункты попадают в текстовый слой после остального блока и ATS читает их не по порядку */
 .points li::before {
   content: '';
-  position: absolute;
-  left: 2px;
-  top: .8em;
+  display: inline-block;
   width: 7px;
   height: 2px;
+  margin: 0 11px 0 -18px;
+  vertical-align: .3em;
   background: var(--ink);
 }
 
@@ -396,8 +396,17 @@ strong {
     font-size: 8.7pt;
   }
 
+  /* в PDF пробелы при отрицательном трекинге сжимаются, и парсеры склеивают слова */
   body {
     line-height: 1.45;
+    word-spacing: .06em;
+  }
+
+  .name,
+  .label,
+  .company,
+  .role {
+    letter-spacing: 0;
   }
 
   .sheet {
