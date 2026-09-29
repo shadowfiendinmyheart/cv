@@ -179,6 +179,10 @@ strong {
   color: var(--ink);
 }
 
+.print-only {
+  display: none;
+}
+
 .location {
   display: flex;
   flex-wrap: wrap;
@@ -393,7 +397,7 @@ strong {
   }
 
   html {
-    font-size: 8.7pt;
+    font-size: 8.5pt;
   }
 
   /* в PDF пробелы при отрицательном трекинге сжимаются, и парсеры склеивают слова */
@@ -441,6 +445,25 @@ strong {
     height: 3mm;
   }
 
+  /* в PDF вместо слов «LinkedIn», «GitHub» печатаем адреса: ATS читает только видимый текст */
+  .screen-only {
+    display: none;
+  }
+
+  .print-only {
+    display: inline;
+  }
+
+  .contacts .body {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 12mm;
+  }
+
+  .contact-group {
+    display: flex;
+    flex-direction: column;
+  }
+
   .label {
     font-size: 1.35rem;
   }
@@ -472,6 +495,10 @@ strong {
 
   .job-head {
     break-after: avoid;
+  }
+
+  .stack {
+    break-before: avoid;
   }
 
   .job:not(:first-child) {
