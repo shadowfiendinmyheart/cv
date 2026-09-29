@@ -1,0 +1,23 @@
+@import url('../a5/style.css');
+/* Контакты: раздел с подписью, две группы с иконками, строка про локацию */
+.contacts { padding-top: 52px; }
+.contacts .body { font-size: .95rem; }
+.contacts ul { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 28px; }
+.contact-group + .contact-group { margin-top: 6px; }
+.contacts a { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); }
+.icon { width: 15px; height: 15px; flex-shrink: 0; color: var(--muted); stroke-width: 1.75; }
+.location { margin-top: 12px; gap: 0 !important; color: var(--muted); }
+.location li:not(:last-child)::after { content: '·'; margin: 0 .7em; }
+.row:not(.contacts) { padding-top: 56px; }
+@media print { .contacts { padding-top: 6mm; } .icon { width: 3mm; height: 3mm; } }
+/* обе группы в общей сетке, чтобы почта и телефон стояли ровно под Telegram и LinkedIn */
+.contacts .body { display: grid; grid-template-columns: repeat(3, max-content); gap: 6px 36px; }
+.contact-group { display: contents !important; }
+.location { grid-column: 1 / -1; margin-top: 6px; }
+@media screen and (max-width: 760px) { .contacts .body { grid-template-columns: 1fr; gap: 4px; } }
+@media screen and (max-width: 760px) {
+  .sheet { padding: 36px 16px 48px; }
+  .name { font-size: 3.4rem; } .role { font-size: 1.05rem; margin-top: 16px; }
+  .row:not(.contacts), .contacts { padding-top: 40px; }
+  .location { flex-direction: column; } .location li::after { display: none; }
+}
