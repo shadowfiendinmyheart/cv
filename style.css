@@ -31,7 +31,7 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 body {
@@ -308,19 +308,19 @@ strong {
 
 @media screen and (min-width: 1600px) {
   html {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   html {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 2400px) {
   html {
-    font-size: 19px;
+    font-size: 20px;
   }
 }
 
@@ -435,7 +435,7 @@ strong {
   }
 
   html {
-    font-size: 8.5pt;
+    font-size: 9pt;
   }
 
   /* в PDF пробелы при отрицательном трекинге сжимаются, и парсеры склеивают слова */
@@ -458,7 +458,7 @@ strong {
   }
 
   .name {
-    font-size: 4.6rem;
+    font-size: 4.35rem;
   }
 
   .role {
@@ -471,7 +471,7 @@ strong {
   }
 
   .row {
-    padding-top: 7mm;
+    padding-top: 6mm;
   }
 
   .contacts {
@@ -503,7 +503,7 @@ strong {
   }
 
   .label {
-    font-size: 1.35rem;
+    font-size: 1.28rem;
   }
 
   .job + .job {
