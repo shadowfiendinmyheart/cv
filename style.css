@@ -6,6 +6,7 @@
   --muted: #7a7a80;
   --hair: #dcdcd8;
   --hover: #ededeb;
+  --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='5 5 14 14' fill='none' stroke='%23161618' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 7h10v10'/%3E%3Cpath d='M7 17 17 7'/%3E%3C/svg%3E");
 
   --sans: 'Inter Tight', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
@@ -23,6 +24,7 @@
     --muted: #85858b;
     --hair: #2a2a2d;
     --hover: #28282b;
+    --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='5 5 14 14' fill='none' stroke='%23f0f0f0' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 7h10v10'/%3E%3Cpath d='M7 17 17 7'/%3E%3C/svg%3E");
   }
 }
 
@@ -225,17 +227,14 @@ strong {
   color: var(--ink);
 }
 
-/* название компании — ссылка на её сайт; стрелка подсказывает, что по нему можно перейти */
-.company a::after {
-  content: '';
-  display: inline-block;
-  width: .5em;
-  height: .5em;
-  margin-left: .18em;
-  transform: translateY(-.45em);
-  background-color: currentColor;
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='5 5 14 14' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 7h10v10'/%3E%3Cpath d='M7 17 17 7'/%3E%3C/svg%3E") center / contain no-repeat;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='5 5 14 14' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 7h10v10'/%3E%3Cpath d='M7 17 17 7'/%3E%3C/svg%3E") center / contain no-repeat;
+/* название компании — ссылка на её сайт; стрелка подсказывает, что по нему можно перейти.
+   Стрелка нарисована фоном в правом отступе ссылки, а не отдельным блоком: так она не может перенестись на новую строку */
+.company a {
+  padding-right: .85em;
+  background-image: var(--arrow);
+  background-repeat: no-repeat;
+  background-size: .5em;
+  background-position: right .3em top .12em;
 }
 
 .dates {
@@ -506,8 +505,9 @@ strong {
     display: none;
   }
 
-  .company a::after {
-    content: none;
+  .company a {
+    padding-right: .3em;
+    background-image: none;
   }
 
   .print-only {
