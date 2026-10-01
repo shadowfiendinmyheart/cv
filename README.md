@@ -59,14 +59,16 @@ Frontend-разработчик на React и TypeScript, 4 года комме�
 **Стек:** TypeScript, React, Redux, SCSS, Cypress, Node.js, TypeORM, PostgreSQL, Docker
 
 ## Навыки
-**Основа:** JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS, CSS Modules, styled-components, адаптивная вёрстка
-**React и архитектура:** React, React Router, SPA, Feature-Sliced Design, компонентный подход, монорепозиторий (Lerna), UI-киты и дизайн-системы, Next.js и SSR
+**Основа:** JavaScript (ES6+), TypeScript, React, React Router, Next.js и SSR, SPA
+**Вёрстка:** HTML5, CSS3, SCSS, CSS Modules, styled-components, адаптивная вёрстка
+**Архитектура:** Feature-Sliced Design, Clean Architecture, SOLID, DRY / KISS / YAGNI, Clean Code, слоистая архитектура, монорепозиторий (Lerna), UI-киты и дизайн-системы, Atomic Design
 **Состояние и данные:** MobX, Zustand, Redux, TanStack Query (React Query), REST API, Axios, Swagger / OpenAPI, WebSocket
 **Формы:** React Hook Form, Formik, Yup
 **Тестирование:** Jest, Vitest, React Testing Library, скриншотные тесты в Storybook, Cypress, Playwright
 **Инструменты:** Git, GitLab, CI/CD (GitLab CI), Vite, Webpack, ESLint, Prettier, Docker, Figma, Jira, YouTrack, Confluence
-**Процессы:** Scrum, фичалидерство, дизайн-ревью, код-ревью, онбординг
-**Бэкенд на базовом уровне:** Node.js, PostgreSQL
+**AI:** Claude Code, MCP
+**Процессы:** Agile, Scrum, фичалидерство, дизайн-ревью, код-ревью, онбординг
+**Бэкенд на базовом уровне:** Node.js, Express, NestJS, TypeORM, PostgreSQL, Docker Compose
 
 ## Образование
 Высшее — Удмуртский государственный университет, факультет информационных технологий и вычислительной техники, прикладная информатика, 2022
