@@ -220,6 +220,15 @@ strong {
   color: var(--ink);
 }
 
+/* название компании — ссылка на её сайт; стрелка подсказывает, что по нему можно перейти */
+.company a::after {
+  content: '↗';
+  margin-left: .2em;
+  font-size: .55em;
+  vertical-align: .55em;
+  color: var(--muted);
+}
+
 .dates {
   font-family: var(--mono);
   font-size: .74rem;
@@ -486,6 +495,10 @@ strong {
   /* в PDF вместо слов «LinkedIn», «GitHub» печатаем адреса: ATS читает только видимый текст */
   .screen-only {
     display: none;
+  }
+
+  .company a::after {
+    content: none;
   }
 
   .print-only {
