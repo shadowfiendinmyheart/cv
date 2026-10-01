@@ -215,8 +215,9 @@ strong {
 .job-head {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: baseline;
-  gap: 16px;
+  column-gap: 16px;
 }
 
 .company {
@@ -224,6 +225,8 @@ strong {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -.02em;
+  /* название не переносится: подложка при наведении остаётся одним прямоугольником; если не влезает, даты уходят на строку ниже */
+  white-space: nowrap;
   color: var(--ink);
 }
 
@@ -234,7 +237,7 @@ strong {
   background-image: var(--arrow);
   background-repeat: no-repeat;
   background-size: .5em;
-  background-position: right .3em top .12em;
+  background-position: right .3em top .3em;
 }
 
 .dates {
@@ -416,6 +419,11 @@ strong {
   .job-head {
     flex-direction: column;
     gap: 2px;
+  }
+
+  /* на телефоне наведения нет, поэтому длинному названию можно переноситься */
+  .company {
+    white-space: normal;
   }
 
   .job + .job {
