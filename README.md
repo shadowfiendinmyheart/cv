@@ -59,16 +59,15 @@ Frontend-разработчик на React и TypeScript, 4 года комме�
 **Стек:** TypeScript, React, Redux, SCSS, Cypress, Node.js, TypeORM, PostgreSQL, Docker
 
 ## Навыки
-**Основа:** JavaScript (ES6+), TypeScript, React, React Router, Next.js и SSR, SPA
-**Вёрстка:** HTML5, CSS3, SCSS, CSS Modules, styled-components, адаптивная вёрстка
-**Архитектура:** Feature-Sliced Design, Clean Architecture, SOLID, DRY / KISS / YAGNI, Clean Code, слоистая архитектура, монорепозиторий (Lerna), UI-киты и дизайн-системы, Atomic Design
-**Состояние и данные:** MobX, Zustand, Redux, TanStack Query (React Query), REST API, Axios, Swagger / OpenAPI, WebSocket
-**Формы:** React Hook Form, Formik, Yup
+**Основа:** JavaScript, TypeScript, React, React Router, Next.js и SSR
+**Архитектура:** Feature-Sliced Design, Clean Architecture, слоистая архитектура, монорепозиторий (Lerna), SOLID, DRY / KISS / YAGNI, Clean Code
+**Состояние и данные:** MobX, Zustand, Redux, TanStack Query, REST API, Swagger / OpenAPI, WebSocket, React Hook Form, Formik, Yup
+**UI и вёрстка:** HTML, CSS, SCSS, CSS Modules, styled-components, адаптивная вёрстка, UI-киты и дизайн-системы, Atomic Design
 **Тестирование:** Jest, Vitest, React Testing Library, скриншотные тесты в Storybook, Cypress, Playwright
-**Инструменты:** Git, GitLab, CI/CD (GitLab CI), Vite, Webpack, ESLint, Prettier, Docker, Figma, Jira, YouTrack, Confluence
+**Инструменты:** Git, GitLab CI/CD, Vite, Webpack, ESLint, Prettier, Figma, Jira, YouTrack, Confluence
 **AI:** Claude Code, MCP
 **Процессы:** Agile, Scrum, фичалидерство, дизайн-ревью, код-ревью, онбординг
-**Бэкенд на базовом уровне:** Node.js, Express, NestJS, TypeORM, PostgreSQL, Docker Compose
+**Бэкенд (базово):** Node.js, Express, NestJS, TypeORM, PostgreSQL, Docker, Docker Compose
 
 ## Образование
 Высшее — Удмуртский государственный университет, факультет информационных технологий и вычислительной техники, прикладная информатика, 2022

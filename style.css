@@ -445,7 +445,7 @@ strong {
 
 @page {
   size: A4;
-  margin: 14mm 14mm 10mm;
+  margin: 14mm 14mm 12mm;
 }
 
 @media print {
@@ -465,7 +465,7 @@ strong {
 
   /* в PDF пробелы при отрицательном трекинге сжимаются, и парсеры склеивают слова */
   body {
-    line-height: 1.43;
+    line-height: 1.45;
     word-spacing: .06em;
   }
 
@@ -496,7 +496,7 @@ strong {
   }
 
   .row {
-    padding-top: 5mm;
+    padding-top: 6mm;
   }
 
   .contacts {
@@ -559,7 +559,7 @@ strong {
 
   .skills {
     grid-template-columns: 32mm 1fr;
-    gap: .8mm 5mm;
+    gap: 1.2mm 5mm;
   }
 
   .points li:not(:has(ul)),
