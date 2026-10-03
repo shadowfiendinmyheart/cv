@@ -232,12 +232,18 @@ strong {
 
 /* название компании — ссылка на её сайт; стрелка подсказывает, что по нему можно перейти.
    Стрелка нарисована фоном в правом отступе ссылки, а не отдельным блоком: так она не может перенестись на новую строку */
-.company a {
+.company a,
+a.ext {
   padding-right: .69em;
   background-image: var(--arrow);
   background-repeat: no-repeat;
   background-size: .34em;
   background-position: right .3em top .3em;
+}
+
+/* ссылка в тексте не переносится, чтобы стрелка и подложка не разрывались */
+a.ext {
+  white-space: nowrap;
 }
 
 .dates {
@@ -445,7 +451,7 @@ strong {
 
 @page {
   size: A4;
-  margin: 14mm 14mm 12mm;
+  margin: 14mm 14mm 10mm;
 }
 
 @media print {
@@ -465,7 +471,7 @@ strong {
 
   /* в PDF пробелы при отрицательном трекинге сжимаются, и парсеры склеивают слова */
   body {
-    line-height: 1.45;
+    line-height: 1.43;
     word-spacing: .06em;
   }
 
@@ -496,7 +502,7 @@ strong {
   }
 
   .row {
-    padding-top: 6mm;
+    padding-top: 5mm;
   }
 
   .contacts {
@@ -513,7 +519,8 @@ strong {
     display: none;
   }
 
-  .company a {
+  .company a,
+  a.ext {
     padding-right: .3em;
     background-image: none;
   }
@@ -559,7 +566,7 @@ strong {
 
   .skills {
     grid-template-columns: 32mm 1fr;
-    gap: 1.2mm 5mm;
+    gap: .8mm 5mm;
   }
 
   .points li:not(:has(ul)),
