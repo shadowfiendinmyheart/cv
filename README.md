@@ -8,7 +8,7 @@ Frontend-разработчик на React и TypeScript, 4 года комме�
 
 Веду крупные задачи как фичалид: исследую, проектирую решение, защищаю его на дизайн-ревью и отвечаю за результат после релиза. Работаю на стыке с дизайнерами, аналитиками и бэкендом и договариваюсь о решении до того, как написан код. Забочусь о Developer Experience: от удобных компонентов до прозрачных процессов в команде.
 
-В свободное время делаю пет-проекты: [NyamNyamBot](https://github.com/shadowfiendinmyheart/NyamNyamBot) — Telegram-бот, который считает КБЖУ по фото и голосу через Claude, и [sych-bot](https://github.com/shadowfiendinmyheart/sych-bot) — бот для предложки в Telegram-канал с модерацией записей и репостом из ВК.
+В свободное время делаю пет-проекты: [NyamNyamBot](https://github.com/shadowfiendinmyheart/NyamNyamBot) — Telegram-бот, который считает КБЖУ по фото и голосу через Claude, и [sych-bot](https://github.com/shadowfiendinmyheart/sych-bot) — бот для предложки в [Telegram-канал](https://t.me/your_sychevalnya) с модерацией записей и репостом из [паблика ВК](https://vk.com/your_sychevalnya). Бот работает и поддерживается до сих пор.
 
 Связаться со мной можно в Telegram — [@thedawnisyourenemy](https://t.me/thedawnisyourenemy)
 
