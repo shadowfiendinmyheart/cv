@@ -88,9 +88,11 @@ strong {
 
 /* Masthead */
 
-/* фото стоит по центру всего блока с именем и ролью, а его размер привязан к кеглю имени */
+/* фото по высоте совпадает с блоком от верха заглавной «И» до базовой линии роли; коэффициенты взяты из метрик Inter Tight */
 .masthead {
   --name-size: 5rem;
+  --role-size: 1.5rem;
+  --role-gap: 24px;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: start;
@@ -107,7 +109,7 @@ strong {
 
 .photo {
   grid-area: 1 / 2 / 3 / 3;
-  align-self: center;
+  align-self: start;
 }
 
 .name {
@@ -120,8 +122,8 @@ strong {
 }
 
 .role {
-  margin-top: 24px;
-  font-size: 1.5rem;
+  margin-top: var(--role-gap);
+  font-size: var(--role-size);
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -.01em;
@@ -134,8 +136,9 @@ strong {
 
 .photo {
   display: block;
-  width: calc(var(--name-size) * 1.636);
-  height: calc(var(--name-size) * 1.636);
+  width: calc(var(--name-size) * 1.725 + var(--role-gap) + var(--role-size) * 1.007);
+  height: calc(var(--name-size) * 1.725 + var(--role-gap) + var(--role-size) * 1.007);
+  margin-top: calc(var(--name-size) * .075);
   border-radius: 50%;
   object-fit: cover;
 }
@@ -405,11 +408,8 @@ a.ext {
 
   .masthead {
     --name-size: 2.8rem;
-  }
-
-  .role {
-    margin-top: 14px;
-    font-size: 1.25rem;
+    --role-gap: 14px;
+    --role-size: 1.25rem;
   }
 
   .row,
@@ -520,11 +520,8 @@ a.ext {
 
   .masthead {
     --name-size: 3.6rem;
-  }
-
-  .role {
-    margin-top: 3mm;
-    font-size: 1.28rem;
+    --role-gap: 3mm;
+    --role-size: 1.28rem;
   }
 
   .row {
