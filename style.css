@@ -88,11 +88,14 @@ strong {
 
 /* Masthead */
 
-/* фото центрируется по имени, а не по имени вместе с ролью */
+/* фото по высоте совпадает с блоком от верха заглавной «И» до базовой линии роли; коэффициенты взяты из метрик Inter Tight */
 .masthead {
+  --name-size: 5rem;
+  --role-size: 1.5rem;
+  --role-gap: 24px;
   display: grid;
   grid-template-columns: 1fr auto;
-  align-items: center;
+  align-items: start;
   column-gap: 40px;
 }
 
@@ -105,22 +108,24 @@ strong {
 }
 
 .photo {
-  grid-area: 1 / 2;
+  grid-area: 1 / 2 / 3 / 3;
+  align-self: start;
 }
 
 .name {
   max-width: 8ch;
   font-weight: 500;
-  font-size: 6.2rem;
+  font-size: var(--name-size);
   line-height: .9;
   letter-spacing: -.055em;
   color: var(--ink);
 }
 
 .role {
-  margin-top: 28px;
-  font-size: 1.2rem;
+  margin-top: var(--role-gap);
+  font-size: var(--role-size);
   font-weight: 400;
+  line-height: 1.3;
   letter-spacing: -.01em;
   color: var(--muted);
 }
@@ -131,8 +136,9 @@ strong {
 
 .photo {
   display: block;
-  width: 11.2rem;
-  height: 11.2rem;
+  width: calc(var(--name-size) * 1.725 + var(--role-gap) + var(--role-size) * 1.007);
+  height: calc(var(--name-size) * 1.725 + var(--role-gap) + var(--role-size) * 1.007);
+  margin-top: calc(var(--name-size) * .075);
   border-radius: 50%;
   object-fit: cover;
 }
@@ -142,6 +148,7 @@ strong {
 .row {
   display: grid;
   grid-template-columns: var(--rail) 1fr;
+  align-items: baseline;
   padding-top: 56px;
 }
 
@@ -171,7 +178,7 @@ strong {
   color: var(--graphite);
 }
 
-/* Contacts: две группы в общей сетке, почта и телефон стоят под Telegram и LinkedIn */
+/* Contacts: две группы в общей сетке из равных колонок до края листа: сверху почта, Telegram, телефон, под ними профили */
 
 .contacts {
   padding-top: 52px;
@@ -179,7 +186,7 @@ strong {
 
 .contacts .body {
   display: grid;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2px 36px;
   font-size: .95rem;
   line-height: 1.6;
@@ -193,11 +200,16 @@ strong {
   display: contents;
 }
 
+/* строка выравнивается по базовой линии текста, а не по низу иконки, иначе «Контакты» встаёт ниже первой строки */
 .contacts a {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
   gap: 8px;
   color: var(--ink);
+}
+
+.contacts .icon {
+  align-self: center;
 }
 
 .print-only {
@@ -383,7 +395,7 @@ a.ext {
     grid-area: 1 / 1;
     width: 104px;
     height: 104px;
-    margin-bottom: 28px;
+    margin: 0 0 28px;
   }
 
   .name {
@@ -394,13 +406,10 @@ a.ext {
     grid-area: 3 / 1;
   }
 
-  .name {
-    font-size: 3.4rem;
-  }
-
-  .role {
-    margin-top: 16px;
-    font-size: 1.05rem;
+  .masthead {
+    --name-size: 2.8rem;
+    --role-gap: 14px;
+    --role-size: 1.25rem;
   }
 
   .row,
@@ -410,7 +419,7 @@ a.ext {
     padding-top: 40px;
   }
 
-  /* контакты в две колонки: слева мессенджер и профили, справа почта и телефон */
+  /* контакты в две колонки: слева почта, Telegram и телефон, справа профили */
   .contacts .body {
     grid-template-columns: 1fr 1fr;
     gap: 0 16px;
@@ -509,17 +518,10 @@ a.ext {
     padding: 0;
   }
 
-  .name {
-    font-size: 4.35rem;
-  }
-
-  .role {
-    margin-top: 3mm;
-  }
-
-  .photo {
-    width: 26mm;
-    height: 26mm;
+  .masthead {
+    --name-size: 3.6rem;
+    --role-gap: 3mm;
+    --role-size: 1.28rem;
   }
 
   .row {
