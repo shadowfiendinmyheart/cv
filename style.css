@@ -88,7 +88,7 @@ strong {
 
 /* Masthead */
 
-/* круг фото идёт от верха заглавной «И» до базовой линии «Тюлькин»: коэффициенты взяты из метрик Inter Tight при line-height .9 */
+/* фото стоит по центру всего блока с именем и ролью, а его размер привязан к кеглю имени */
 .masthead {
   --name-size: 5rem;
   display: grid;
@@ -106,7 +106,8 @@ strong {
 }
 
 .photo {
-  grid-area: 1 / 2;
+  grid-area: 1 / 2 / 3 / 3;
+  align-self: center;
 }
 
 .name {
@@ -134,7 +135,6 @@ strong {
   display: block;
   width: calc(var(--name-size) * 1.636);
   height: calc(var(--name-size) * 1.636);
-  margin-top: calc(var(--name-size) * .075);
   border-radius: 50%;
   object-fit: cover;
 }
